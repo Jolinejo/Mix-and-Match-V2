@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#e7baff, #c2b6d9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#drop-area{
+    width: 500px;
+    height: 300px;
+    padding: 30px;
+    background: #fff;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+#img-view{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px dashed #bbb5ff;
+    background: #f7f8ff;
+}
+#img-view img{
+    width: 100px;
+    margin-top: 25px;
+}
+#img-view span{
+    display: block;
+    font-size: 12px;
+    color: #777;
+    margin-top: 15px;
+}
+#signOutBtn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #6831FF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#dashboardBtn {
+    position: absolute;
+    top: 10px;
+    left: 120px; /* Adjust left position to add space */
+    background-color: #6831FF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+#signOutBtn:hover, #dashboardBtn:hover{
+    background-color: #a39eff;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f8ff; /* Light background color */
+    color: #6831FF; /* Primary text color */
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #6831FF; /* Soft pastel color for headings */
+}
+
+/* Output Container */
+#output {
+    background-color: #fff; /* White background for output section */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Color Pair Container */
+.matching-colors-container, .best-hair-colors-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Individual Color Pair */
+.color-pair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff; /* White text for color divs */
+    font-weight: bold;
+}
+
+/* Matching Colors */
+.matching-colors-container .color-pair {
+    background-color: #e7baff; /* Soft pastel color for matching colors */
+}
+
+/* Best Hair Colors */
+.best-hair-colors-container .color-pair {
+    background-color: #a39eff; /* Slightly darker shade for best hair colors */
+}
+
+/* Color Hex Code Background */
+.color-pair p:last-child {
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}

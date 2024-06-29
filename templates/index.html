@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Color Analysis</title>
+    <link rel="stylesheet" href="/static/styles/landing.css">
+</head>
+<body>
+
+<div class="hero">
+    <h1>Welcome to Mix and Match</h1>
+    <p>Discover the perfect colors for you!</p>
+    <div class="buttons-container">
+        <button id="loginBtn">Login</button>
+        <button id="signupBtn">Sign Up</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById("loginBtn").onclick = function() {
+        window.location.href = "/login/"; // Redirect to login page
+    };
+
+    document.getElementById("signupBtn").onclick = function() {
+        window.location.href = "/signup/"; // Redirect to signup page
+    };
+</script>
+
+</body>
+</html>
