@@ -167,4 +167,4 @@ def dashboard():
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 if __name__ == "__main__":
     """ Main Function """
-    app.run(host='0.0.0.0', port=5001)
+    app.run(debig=False, host='0.0.0.0', port=5001)
