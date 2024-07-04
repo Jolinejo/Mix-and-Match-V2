@@ -1,8 +1,8 @@
 # Mix and Match Website
 
-Welcome to the Mix and Match website, a dynamic platform designed to offer personalized color suggestions for your uploaded images. 
-Perfect for designers, artists, and anyone interested in color theory.
-Our website lets you sign up to create a personalized dashboard where all your uploads and color recommendations are saved.
+Welcome to the Mix and Match website, a dynamic platform designed to offer personalized color suggestions for your uploaded images. Perfect for designers, artists, and anyone interested in color theory. Our website lets you sign up to create a personalized dashboard where all your uploads and color recommendations are saved.
+
+[Check out the deployed website here](http://mariamibrahimaj.pythonanywhere.com/)
 
 ## Getting Started
 
@@ -23,19 +23,26 @@ Before you begin, ensure you have Python installed on your machine. You can down
    cd mix-and-match
    ```
 
-2. **Create a Configuration File**
+2. **Set Environment Variables**
 
-   Inside the root directory of the project, create a file named `config.py`. This file will store sensitive information such as your API keys:
+   Set the required environment variables for the project:
 
-   ```python
-   # config.py
-   api_key = 'your_gemini_api_key_here'
+   ```bash
+   export API_KEY='your_gemini_api_key_here'
+   export DATABASE_URL='your_database_url_here'
    ```
 
-   Replace `'your_gemini_api_key_here'` with your actual Gemini API key.
+   Replace `'your_gemini_api_key_here'` with your actual Gemini API key and `'your_database_url_here'` with your database URL.
 
+3. **Install Dependencies**
 
-3. **Run the Application**
+   Install the necessary dependencies by running:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the Application**
 
    Launch the application by running:
 
